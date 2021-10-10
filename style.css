@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #333;
+  color: #222;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1px;
+  background-image: url(images/pexels-negative-space-34088.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 1280px 609.33px;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: teal;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+
+.circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+nav a{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #FF7979;
+  font-weight: bold;
+}
+
+.content img {
+  max-width: 100%;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.small-text {
+  color: white;
+  font-style: italic;
+}
+
+.content p {
+    width: 383;
+    line-height: 1.5;
+    color: white
+}
+
+.text-container {
+    margin: 365px 0px 0px 802px;
+    width: 315px;
+}
+
+.text-headline {
+    font-size: xx-large;
+    font-style: regular 400;
+}
+
+.name {
+    color: teal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.resume-link {
+    background-color: teal;
+    padding: 15px 35px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+/* Work page */
+.work-content {
+    background-color: black;
+    color: white;
+}
+
+.work-container {
+    background-color: black;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 1px;
+    color: white;
+  }
+  
+  .work-container.show-nav {
+    transform: rotate(-20deg);
+  }
+
+  .work-container.show-nav .circle {
+    transform: rotate(-70deg);
+  }
+
+  .work-container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+  }
+
+  .card-container {
+      display: flex;
+  }
+
+  .card {
+      background-color: white;
+      border-radius: 40px;
+      width: 475px;
+      height: 392px;
+      margin: 0px 16px 0px 16px;
+  }
+
+  .contact-card {
+    background-color: teal;
+    border-radius: 20px;
+    width: 416px;
+    height: 495px;
+    margin: 0px 0px 0px 200px
+}
+  .content.work {
+    margin: 90px auto;
+  }
+
+  .my-image {
+    width: 365px;
+  }
+
+  .card-icon {
+    margin: 0px 40px 0px 50px;;
+  }
+
+  .icon-container {
+      display: flex;
+      margin-top: 125px;
+  }
+
+  .contact-header {
+      padding-top: 20px;
+      text-align: center;
+      font-size: 25px;
+      font-family: cursive;
+  }
+
+  .li-border:hover {
+    background-color: grey;
+  }
+
+  /* li {
+    width: 91px;
+    height: 35px;
+  } */
+
+  ul {
+      list-style: none;
+  }
+
+  .li-border {
+    width: 105px;
+    height: 36px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+  }
