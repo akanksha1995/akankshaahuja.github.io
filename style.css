@@ -19,7 +19,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   padding: 1px;
-  background-image: url(pexels-negative-space-34088.jpg);
+  background-image: url(images/pexels-negative-space-34088.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 1280px 609.33px;
@@ -144,7 +144,7 @@ nav a:hover {
   font-style: italic;
 }
 
-.content p {
+.content {
     width: 383;
     line-height: 1.5;
     color: white
@@ -274,4 +274,17 @@ a {
     text-align: center;
     padding: 5px;
     margin: 5px;
+  }
+
+  .card-text {
+    color: black;
+  }
+
+  .project-headline {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .link-buttons {
+    padding: 20px;
   }
